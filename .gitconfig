@@ -1,0 +1,25 @@
+[alias]
+  prb = pull --rebase --autostash
+  s = stash save
+  sp = stash pop
+  co = checkout
+  p  = push --tags
+  su = submodule update --init --recursive
+  st = status
+  di = diff
+  ci = duet-commit --verbose
+  br = branch
+  lg = log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  ds = diff --staged
+  unstage = reset HEAD
+[user]
+	name = Andrew Meyer
+	email = ameyer@pivotal.io
+[duet "env"]
+	git-author-initials = am
+	git-author-name = Andrew Meyer
+	git-author-email = ameyer@pivotal.io
+	mtime = 1540996259
+	git-committer-initials = 
+	git-committer-name = 
+	git-committer-email = 
