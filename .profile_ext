@@ -3,12 +3,6 @@ export GOPATH=$HOME/workspace/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-# Byobu
-export BYOBU_PREFIX=/usr/local
-
-# Direnv setup
-eval "$(direnv hook bash)"
-
 # Z setup
 . /usr/local/etc/profile.d/z.sh
 
