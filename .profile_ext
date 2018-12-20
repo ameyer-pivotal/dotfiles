@@ -10,7 +10,7 @@ export PATH=$PATH:$GOBIN
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\e[90m\u@\h\e[0m \e[35m\W\e[0m\e[32m\]\$(parse_git_branch)\[\e[0m $ "
+export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[35m\]\W\[\e[0m\]\[\e[32m\]\$(parse_git_branch)\[\e[0m\] $ "
 
 # Aliases
 alias clean-docker='docker rm -f $(docker ps -aq) &>/dev/null; docker system prune --all -f && docker volume prune -f && docker images && docker volume ls && docker ps'
