@@ -10,6 +10,7 @@
   ci = duet-commit --verbose
   br = branch
   lg = log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  flog = log --pretty=fuller --decorate
   ds = diff --staged
   unstage = reset HEAD
 [user]

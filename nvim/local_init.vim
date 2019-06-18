@@ -33,6 +33,7 @@ let g:go_fmt_command = "gofmt"
 " ---------------
 " Generic
 " ---------------
+set conceallevel=0
 set mouse=a
 set nowrap
 map <Space> :noh<cr>
