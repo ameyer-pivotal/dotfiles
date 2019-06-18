@@ -33,7 +33,7 @@ let g:go_fmt_command = "gofmt"
 " ---------------
 " Generic
 " ---------------
-set conceallevel=0
+let g:indentLine_fileTypeExclude = ['markdown']
 set mouse=a
 set nowrap
 map <Space> :noh<cr>
