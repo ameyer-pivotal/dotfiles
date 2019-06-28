@@ -22,3 +22,7 @@ alias vim=nvim
 # Git Duet
 export GIT_DUET_GLOBAL=true
 export GIT_DUET_ROTATE_AUTHOR=true
+
+# Autocompletions
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+pack completion > /tmp/pack_completion && chmod +x /tmp/pack_completion && . /tmp/pack_completion
